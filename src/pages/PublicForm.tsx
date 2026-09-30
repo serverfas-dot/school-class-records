@@ -430,7 +430,7 @@ function Bg({ children }: { children: React.ReactNode }) {
 }
 
 function Header() {
-  const logoSrc = useTransparentLogo('/School-logo.png');
+  const logoSrc = useTransparentLogo(`${import.meta.env.BASE_URL}School-logo.png`);
   return (
     <div className="text-center py-2">
       {logoSrc
